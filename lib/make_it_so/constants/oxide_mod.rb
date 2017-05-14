@@ -6,6 +6,10 @@ module MakeItSo
           "http://oxidemod.org/login/"
         end
 
+        def oxide_mod_binary
+          "https://dl.bintray.com/oxidemod/builds/Oxide-Rust.zip"
+        end
+
         # Mods
         def mods
           [

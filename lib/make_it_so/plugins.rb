@@ -30,7 +30,7 @@ module MakeItSo
 
     def download_plugins!
       @plugin_urls.each do |plugin_url|
-        actor.get(plugin_url).save!(plugin_path)
+        actor.get(plugin_url).save!("#{plugin_path}/#{filename}")
       end
     end
 
